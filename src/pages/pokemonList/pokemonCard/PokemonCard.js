@@ -1,9 +1,10 @@
 import styles from "./PokemonCard.module.css"
-
+import {NavLink} from "react-router-dom"
 
 export default function PokemonCard({ pokemon, imgStyle }){
     return (
-        <div id={styles.card} className="bg-white drop-shadow-lg hover:drop-shadow-none transition duration-300 relative">
+        
+        <NavLink to={`pokedex/${pokemon.name.fr}`} id={styles.card} className="bg-white drop-shadow-lg hover:drop-shadow-none transition duration-300 relative">
             <div className="flex">
                 <h2 className="text-2xl font-bold flex-1">{pokemon.name.fr}</h2>
                 <span className="italic font-bold">#{pokemon.pokedexId}</span>
@@ -27,6 +28,6 @@ export default function PokemonCard({ pokemon, imgStyle }){
                 </div>
             </div>
             <hr className="my-2"/>
-        </div>
+        </NavLink>
     )
 }

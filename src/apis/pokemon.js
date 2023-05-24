@@ -12,3 +12,17 @@ export async function getPokemonByGen(gen){
         throw new Error(e)
     }
 }
+
+export async function getPokemonByName(name){
+    try{
+        const response = await fetch(`${BASE_URL}/pokemon/${name}`, {method:'GET'})
+        if(response.ok){
+            return await response.json()
+        }else{
+            throw new Error('Error')
+        }
+    }catch(e){
+        throw new Error(e)
+    }
+
+}
