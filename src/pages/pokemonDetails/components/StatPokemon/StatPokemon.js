@@ -1,6 +1,6 @@
 export default function StatPokemon({ stats }) {
 
-    const coefficients_bar = 1.2
+    const coefficients_bar = 1.6
 
     return (
         <div>
