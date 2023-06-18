@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "rollup-plugin-windicss": "^1.9.0",
     "tailwindcss": "^3.3.2"
   }
 }

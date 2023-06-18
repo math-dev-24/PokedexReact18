@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom"
 export default function PokemonCard({ pokemon, imgStyle }){
     return (
         
-        <NavLink to={`pokedex/${pokemon.name.fr}`} id={styles.card} className="bg-white drop-shadow-lg hover:drop-shadow-none transition duration-300 relative">
+        <NavLink to={`pokedex/${pokemon.name.fr}`} id={styles.card} className="block bg-white drop-shadow-xl hover:drop-shadow-none transition duration-300 relative">
             <div className="flex">
                 <h2 className="text-2xl font-bold flex-1">{pokemon.name.fr}</h2>
                 <span className="italic font-bold">#{pokemon.pokedexId}</span>
